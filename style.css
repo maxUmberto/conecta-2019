@@ -539,13 +539,14 @@ input:required {
     left: -10%;
     content: '';
     background: #df42b1;
+    background-color: #f8d510;
     background-image: -webkit-linear-gradient(120deg, #f8d510 0%, #ff6b21 100%);
     background-image: -ms-linear-gradient(120deg, #505add 0%, #df42b1 100%);
     z-index: -2; }
   .confer-btn:focus, .confer-btn:hover {
     font-weight: 500;
-    background-image: -webkit-linear-gradient(120deg, #f8d510 0%, #ff26cc 100%);
-    /*background-color: #ffffff;*/
+    background-image: -webkit-linear-gradient(120deg, #f8d510 0%, #ff6b21 100%);
+    /*background-color: #707070;*/
     color: #fff !important;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); }
@@ -711,22 +712,22 @@ input:required {
       font-weight: 500;
       padding: 0 20px; }
       .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-        color: #f8d810; }
+        color: #fff; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px; } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px;
-          color: #111343; }
+          color: #fff; }
           .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-            color: #df42b1; } }
+            color: #fff; } }
       @media only screen and (max-width: 767px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px;
-          color: #111343; }
+          color: #fff; }
           .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-            color: #df42b1; } }
+            color: #fff; } }
     .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
       font-size: 14px;
       text-transform: uppercase;
@@ -735,9 +736,9 @@ input:required {
       padding: 0 30px;
       color: #111343; }
       .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
-        color: #df42b1; }
+        color: #fff; }
     .classy-nav-container .classy-navbar .classynav ul li.active a {
-      color: #df42b1; }
+      color: #fff; }
 
 .classynav ul li.has-down > a::after,
 .classynav ul li.has-down.active > a::after,
