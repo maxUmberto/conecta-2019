@@ -539,13 +539,14 @@ input:required {
     left: -10%;
     content: '';
     background: #df42b1;
-    background-image: -webkit-linear-gradient(120deg, #233D4D 0%, #fdde2A 100%);
+    background-image: -webkit-linear-gradient(120deg, #f8d510 0%, #ff6b21 100%);
     background-image: -ms-linear-gradient(120deg, #505add 0%, #df42b1 100%);
     z-index: -2; }
   .confer-btn:focus, .confer-btn:hover {
     font-weight: 500;
-    background-color: #ffffff;
-    color: #111343 !important;
+    background-image: -webkit-linear-gradient(120deg, #f8d510 0%, #ff26cc 100%);
+    /*background-color: #ffffff;*/
+    color: #fff !important;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); }
     .confer-btn:focus i, .confer-btn:hover i {
@@ -710,7 +711,7 @@ input:required {
       font-weight: 500;
       padding: 0 20px; }
       .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-        color: #df42b1; }
+        color: #f8d810; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px; } }
@@ -917,7 +918,7 @@ input:required {
         top: 67px;
         right: 5px;
         z-index: -1;
-        background-image: -webkit-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+        background-image: -webkit-linear-gradient(120deg, #f8d510 0%, #ff6b21 100%);
         background-image: -ms-linear-gradient(120deg, #505add 0%, #df42b1 100%); }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .single-welcome-slide .welcome-text h2::after {
