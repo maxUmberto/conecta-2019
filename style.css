@@ -2747,4 +2747,17 @@ input:required {
       .call-to-action-content .event-time p i {
         margin-right: 3px; }
 
+.col-2dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+
 /*# sourceMappingURL=style.css.map */
