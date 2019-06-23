@@ -359,8 +359,8 @@ input:required {
   top: 0;
   left: 0;
   background: #df42b1;
-  background-image: -webkit-linear-gradient(120deg, #505add 0%, #df42b1 100%);
-  background-image: -ms-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+  background-image: -webkit-linear-gradient(120deg, #f8d510 0%, #ff6b21 100%);
+  background-image: -ms-linear-gradient(120deg, #f8d510 0%, #ff6b21 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
