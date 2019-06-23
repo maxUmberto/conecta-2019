@@ -358,9 +358,9 @@ input:required {
   z-index: 9999999;
   top: 0;
   left: 0;
-  background: #df42b1;
-  background-image: -webkit-linear-gradient(120deg, #505add 0%, #df42b1 100%);
-  background-image: -ms-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+  background: #ff6b21;
+  background-image: -webkit-linear-gradient(120deg, #f8d510 0%, #ff6b21 100%);
+  background-image: -ms-linear-gradient(120deg, #f8d510 0%, #ff6b21 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,7 +485,8 @@ input:required {
   width: 40px;
   height: 40px;
   bottom: 40px;
-  background-color: #df42b1;
+  /*background-color: #df42b1;*/
+  background-image: -webkit-linear-gradient(120deg, #f8d510 0%, #ff6b21 100%);
   color: #ffffff;
   text-align: center;
   -webkit-transition-duration: 500ms;
@@ -2312,7 +2313,7 @@ input:required {
   transition-duration: 500ms;
   margin-bottom: 20px; }
   .single-schedule-area:hover, .single-schedule-area:focus {
-    border-color: #df42b1; }
+    border-color: #ff6b21; }
   .single-schedule-area .single-schedule-tumb-info {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 42%;
@@ -2406,7 +2407,7 @@ input:required {
         .single-schedule-area .schedule-time-place p {
           font-size: 12px; } }
       .single-schedule-area .schedule-time-place p i {
-        color: #df42b1;
+        color: #ff6b21;
         margin-right: 5px; }
       .single-schedule-area .schedule-time-place p:last-child {
         margin-bottom: 0; }
@@ -2447,7 +2448,7 @@ input:required {
     .single-schedule-area.single-page .schedule-time-place p {
       color: #111343; }
     .single-schedule-area.single-page:hover, .single-schedule-area.single-page:focus {
-      border-color: #df42b1; }
+      border-color: #ff6b21; }
 
 /* :: 18.0 Tickets Area CSS */
 .our-ticket-pricing-table-area {
