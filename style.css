@@ -485,7 +485,8 @@ input:required {
   width: 40px;
   height: 40px;
   bottom: 40px;
-  background-color: #df42b1;
+  /*background-color: #df42b1;*/
+  background-image: -webkit-linear-gradient(120deg, #f8d510 0%, #ff6b21 100%);
   color: #ffffff;
   text-align: center;
   -webkit-transition-duration: 500ms;
