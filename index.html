@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body id="inicio">
     <!-- Preloader-->
     <div id="preloader">
         <div class="loader"></div>
@@ -33,7 +33,7 @@
                 <nav class="classy-navbar justify-content-between" id="conferNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+                    <a class="nav-brand" href="#inicio"><img src="./img/core-img/logo.png" alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -49,16 +49,17 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <li class="active"><a href="index.html">Início</a></li>
+                                <li class="active"><a href="#inicio">Início</a></li>
                                 <li><a href="#">Sobre</a>
                                     <ul class="dropdown">
                                         <li><a href="about.html">- Quem Somos</a></li>
                                         <li><a href="speakers.html">- Equipe</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="speakers.html">Palestrantes</a></li>
-                                <li><a href="blog.html">Calendário</a></li>
-                                <li><a href="contact.html">Contato</a></li>
+                                <li><a href="#palestrantes">Palestrantes</a></li>
+                                <li><a href="#calendario">Calendário</a></li>
+                                <li><a href="#patrocinadores">Patrocinadores</a></li>
+                                <li><a href="#contato">Contato</a></li>
                             </ul>
 
                             <!-- Get Tickets Button -->
@@ -167,7 +168,7 @@
     <!-- About Us And Countdown Area End -->
 
     <!-- Our Speakings Area Start -->
-    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/3.jpg);">
+    <section id="palestrantes" class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/3.jpg);">
         <div class="container">
             <div class="row">
                 <!-- Heading -->
@@ -522,7 +523,7 @@
 
 
     <!-- Our Schedule Area Start -->
-    <section class="our-schedule-area section-padding-100">
+    <section id="calendario" class="our-schedule-area section-padding-100">
         <div class="container">
             <div class="row">
                 <!-- Heading -->
@@ -873,7 +874,7 @@
     <!-- Our Ticket Pricing Table Area End -->
 
     <!-- Our Sponsor And Client Area Start -->
-    <section class="our-sponsor-client-area section-padding-100">
+    <section id="patrocinadores" class="our-sponsor-client-area section-padding-100">
         <div class="container">
             <div class="row">
                 <!-- Heading -->
@@ -935,7 +936,7 @@
     <!-- Our Blog Area End -->
 
     <!-- Contact Area Start -->
-    <section class="contact-our-area section-padding-100-0">
+    <section id="contato" class="contact-our-area section-padding-100-0">
         <div class="container">
             <div class="row">
                 <!-- Heading -->
@@ -1110,6 +1111,32 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/confer.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
 
 </body>
 

@@ -711,7 +711,7 @@ input:required {
       text-transform: uppercase;
       color: #ffffff;
       font-weight: 500;
-      padding: 0 20px; }
+      padding: 0 10px; }
       .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
         color: #fff; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1433,7 +1433,7 @@ input:required {
       letter-spacing: 1px;
       margin-bottom: 10px; }
     .single-speaker-area .speaker-info p {
-      color: #df42b1;
+      color: #ff6b21;
       margin-bottom: 0;
       letter-spacing: 1px;
       line-height: 1; }
