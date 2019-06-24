@@ -62,7 +62,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  color: #111343;
+  color: #171B20;
   line-height: 1.25;
   font-weight: 600; }
 
@@ -70,7 +70,7 @@ a,
 a:active,
 a:focus,
 a:hover {
-  color: #111343;
+  color: #171B20;
   text-decoration: none;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -465,7 +465,7 @@ input:required {
     font-weight: 400; }
   .section-heading-3 h4 {
     font-size: 38px;
-    color: #111343;
+    color: #171B20;
     margin-bottom: 0;
     text-transform: uppercase;
     letter-spacing: 1px; }
@@ -587,7 +587,7 @@ input:required {
   .confer-btn-2 i {
     margin-left: 4px; }
   .confer-btn-2.btn-2 {
-    color: #111343; }
+    color: #171B20; }
   .confer-btn-2:focus, .confer-btn-2:hover {
     font-weight: 500;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
@@ -684,7 +684,7 @@ input:required {
     left: 2px;
     right: 2px;
     bottom: 2px;
-    background-color: #151853;
+    background-color: #171B20;
     content: '';
     z-index: -1; }
   .confer-gb-btn:hover, .confer-gb-btn:focus {
@@ -735,7 +735,7 @@ input:required {
       height: 42px;
       line-height: 42px;
       padding: 0 30px;
-      color: #111343; }
+      color: #171B20; }
       .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
         color: #000; }
     .classy-nav-container .classy-navbar .classynav ul li.active a {
@@ -997,7 +997,7 @@ input:required {
 .footer-area {
   position: relative;
   z-index: 1;
-  background-color: #111343; }
+  background-color: #212429; }
   .footer-area .row {
     margin-left: -30px;
     margin-right: -30px; }
@@ -1163,7 +1163,7 @@ input:required {
 .about-us-countdown-area {
   position: relative;
   z-index: 1;
-  background-color: #151853; }
+  background-color: #171B20; }
   .about-us-countdown-area .about-content-text h6 {
     font-size: 14px;
     font-weight: 500;
@@ -1238,7 +1238,7 @@ input:required {
     -o-transition-duration: 1000ms;
     transition-duration: 1000ms;
     font-size: 22px;
-    color: #111343;
+    color: #171B20;
     margin-top: 25px;
     position: relative;
     z-index: 2; }
@@ -1297,7 +1297,7 @@ input:required {
     .about-us-countdown-area .countdown-up-area .countdown-content-text h6 {
       font-size: 14px;
       text-transform: uppercase;
-      color: #df42b1;
+      color: #ff6b21;
       font-weight: 400;
       margin-bottom: 15px;
       letter-spacing: 1px; }
@@ -1351,7 +1351,7 @@ input:required {
         .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
           margin-top: 5px;
           font-size: 18px;
-          color: #5d5e8d;
+          color: #ff6b21;
           font-weight: 500;
           display: block; }
           @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1574,7 +1574,7 @@ input:required {
     .single-blog-area .single-blog-text .blog-title {
       font-size: 20px;
       font-weight: 600;
-      color: #111343;
+      color: #171B20;
       margin-bottom: 5px;
       display: inline-block;
       -webkit-transition-duration: 500ms;
@@ -1648,7 +1648,7 @@ input:required {
     .post-details-content .post-blog-thumbnail img {
       border-radius: 10px; }
   .post-details-content .post-title {
-    color: #111343;
+    color: #171B20;
     font-size: 25px; }
   .post-details-content .post-meta {
     position: relative;
@@ -1674,7 +1674,7 @@ input:required {
     font-style: italic;
     font-weight: 400;
     line-height: 1.6;
-    color: #111343;
+    color: #171B20;
     border-left: 3px solid #df42b1;
     padding-left: 10px;
     margin-bottom: 0; }
@@ -1970,7 +1970,7 @@ input:required {
     z-index: 1;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    color: #111343; }
+    color: #171B20; }
   .single-widget-area .search-widget {
     position: relative;
     z-index: 1; }
@@ -2074,7 +2074,7 @@ input:required {
     .single-widget-area .post-author-widget .post-author-content h5 {
       font-size: 18px;
       margin-bottom: 5px;
-      color: #111343; }
+      color: #171B20; }
     .single-widget-area .post-author-widget .post-author-content span {
       font-size: 14px;
       margin-bottom: 15px;
@@ -2116,7 +2116,7 @@ input:required {
       border-radius: 5px; }
   .single-recent-post-area .post-content .post-title {
     display: block;
-    color: #111343;
+    color: #171B20;
     font-size: 16px;
     margin-bottom: 5px; }
   .single-recent-post-area .post-content .post-date {
@@ -2229,7 +2229,7 @@ input:required {
     .single-client-content .single-client-text.about-page p {
       color: #5d5e8d; }
     .single-client-content .single-client-text.about-page .client-info h6 {
-      color: #111343; }
+      color: #171B20; }
   .single-client-content .client-icon {
     background: #df42b1;
     background: -moz-linear-gradient(120deg, #df42b1 0%, #505add 100%);
@@ -2249,7 +2249,7 @@ input:required {
 .our-schedule-area {
   position: relative;
   z-index: 1;
-  background-color: #151853; }
+  background-color: #171B20; }
   .our-schedule-area .schedule-tab {
     position: relative;
     z-index: 1;
@@ -2260,8 +2260,8 @@ input:required {
       justify-content: center;
       border-bottom: none; }
       .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
-        color: #9293bc;
-        background-color: #1f2371;
+        color: #171B20;
+        background-color: #645B57;
         text-align: center;
         border-radius: 0;
         font-size: 18px;
@@ -2272,7 +2272,7 @@ input:required {
         border-bottom: none;
         border-top: none;
         border-left: none;
-        border-right: 1px solid #4c4f8d; }
+        border-right: 1px solid #171B20; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
             font-size: 14px; } }
@@ -2299,7 +2299,7 @@ input:required {
             .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link span {
               font-size: 10px; } }
         .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link.active {
-          background-color: #5d5e8d;
+          background-color: #202325;
           color: #ffffff; }
       .our-schedule-area .schedule-tab .nav-tabs .nav-item:nth-child(1) .nav-link {
         border-radius: 10px 0 0 10px; }
@@ -2308,7 +2308,7 @@ input:required {
         border-radius: 0 10px 10px 0; }
 
 .single-schedule-area {
-  border: 1px solid #444675;
+  border: 1px solid #ff6b21;
   border-radius: 10px;
   padding: 25px;
   -webkit-transition-duration: 500ms;
@@ -2316,7 +2316,7 @@ input:required {
   transition-duration: 500ms;
   margin-bottom: 20px; }
   .single-schedule-area:hover, .single-schedule-area:focus {
-    border-color: #ff6b21; }
+    border-color: #f8d510; }
   .single-schedule-area .single-schedule-tumb-info {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 42%;
@@ -2361,7 +2361,7 @@ input:required {
           .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
             font-size: 14px; } }
       .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
-        color: #9293bc;
+        color: #696563;
         margin-bottom: 0; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
           .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
@@ -2410,7 +2410,7 @@ input:required {
         .single-schedule-area .schedule-time-place p {
           font-size: 12px; } }
       .single-schedule-area .schedule-time-place p i {
-        color: #ff6b21;
+        color: #fff;
         margin-right: 5px; }
       .single-schedule-area .schedule-time-place p:last-child {
         margin-bottom: 0; }
@@ -2442,14 +2442,14 @@ input:required {
     -o-transition-duration: 500ms;
     transition-duration: 500ms; }
     .single-schedule-area.single-page .single-schedule-info h6 {
-      color: #111343; }
+      color: #171B20; }
     .single-schedule-area.single-page .single-schedule-info p {
       color: #9293bc;
       margin-bottom: 0; }
       .single-schedule-area.single-page .single-schedule-info p span {
-        color: #111343; }
+        color: #171B20; }
     .single-schedule-area.single-page .schedule-time-place p {
-      color: #111343; }
+      color: #171B20; }
     .single-schedule-area.single-page:hover, .single-schedule-area.single-page:focus {
       border-color: #ff6b21; }
 
@@ -2522,7 +2522,7 @@ input:required {
         max-height: 60px; } }
   .single-ticket-pricing-table .ticket-price {
     font-size: 60px;
-    color: #111343;
+    color: #171B20;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1;
@@ -2552,7 +2552,7 @@ input:required {
 .our-sponsor-client-area {
   position: relative;
   z-index: 1;
-  background-color: #151853; }
+  background-color: #171B20; }
 
 .our-sponsor-area {
   position: relative;
@@ -2608,7 +2608,7 @@ input:required {
 .contact-our-area {
   position: relative;
   z-index: 1;
-  background-color: #151853; }
+  background-color: #171B20; }
   .contact-our-area .contact-information .single-contact-info {
     margin-bottom: 25px; }
     .contact-our-area .contact-information .single-contact-info p {
@@ -2671,7 +2671,7 @@ input:required {
   border-radius: 10px; }
 .contact--us-area .contact_from_area .contact-heading h4 {
   font-size: 25px;
-  color: #111343;
+  color: #171B20;
   text-transform: uppercase; }
 .contact--us-area .contact_from_area .contact-heading p {
   color: #5d5e8d;
@@ -2705,7 +2705,7 @@ input:required {
     z-index: 1;
     margin-bottom: 50px; }
     .contact--info-area .single-contact--info h5 {
-      color: #111343;
+      color: #171B20;
       font-size: 16px;
       margin-bottom: 0;
       margin-top: 10px;
