@@ -693,6 +693,9 @@ input:required {
       opacity: 0; }
 
 /* :: 7.0 Header Area CSS */
+.classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
+color: red;
+}
 .classy-nav-container {
   background-color: transparent;
   padding: 0; }
@@ -736,7 +739,7 @@ input:required {
       height: 42px;
       line-height: 42px;
       padding: 0 30px;
-      color: #fff; }
+      color: #000; }
       .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
         color: #000; }
     .classy-nav-container .classy-navbar .classynav ul li.active a {
