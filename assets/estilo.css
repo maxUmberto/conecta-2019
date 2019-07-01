@@ -723,9 +723,10 @@ color: red;
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px;
-          color: #fff; }
+          color: #fff;
+          background-color: #212529; }
           .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-            color: #fff; } }
+            color: #ff6b21; } }
       @media only screen and (max-width: 767px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px;
@@ -739,9 +740,9 @@ color: red;
       height: 42px;
       line-height: 42px;
       padding: 0 30px;
-      color: #000; }
+      color: #ff6b21; }
       .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
-        color: #000; }
+        color: #ff6b21; }
     .classy-nav-container .classy-navbar .classynav ul li.active a {
       color: #fff; }
 
@@ -2681,6 +2682,9 @@ color: red;
   color: #5d5e8d;
   margin-bottom: 30px; }
 
+.contact_input_area .form-group .text-muted{
+  color: #f8d7da !important;
+}
 .contact_input_area .form-group .form-control {
   border-bottom: 1px solid #dbdcf1;
   color: #9293bc; }

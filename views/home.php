@@ -906,37 +906,77 @@
                     <!-- Contact Form -->
                     <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
                         <div class="contact_form">
-                            <form action="mail.php" method="post" id="main_contact_form">
+                            <form action="<?php echo BASE_URL; ?>/home/formulario" method="post" id="main_contact_form">
                                 <div class="contact_input_area">
                                     <div id="success_fail_info"></div>
                                     <div class="row">
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
+                                                <?php
+                                                if(isset($_SESSION['name_error'])){
+                                                  echo '<small class="form-text text-muted">';
+                                                  echo $_SESSION['name_error'];
+                                                  echo '</small>';
+                                                  unset($_SESSION['name_error']);
+                                                }
+                                                ?>
                                                 <input type="text" class="form-control mb-30" name="name" id="name" placeholder="Seu Nome">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="name" id="name2" placeholder="Sobrenome">
+                                                <?php
+                                                if(isset($_SESSION['sobrenome_error'])){
+                                                  echo '<small class="form-text text-muted">';
+                                                  echo $_SESSION['sobrenome_error'];
+                                                  echo '</small>';
+                                                  unset($_SESSION['sobrenome_error']);
+                                                }
+                                                ?>
+                                                <input type="text" class="form-control mb-30" name="lastname" id="lastname" placeholder="Sobrenome">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
+                                                <?php
+                                                if(isset($_SESSION['email_error'])){
+                                                  echo '<small class="form-text text-muted">';
+                                                  echo $_SESSION['email_error'];
+                                                  echo '</small>';
+                                                  unset($_SESSION['email_error']);
+                                                }
+                                                ?>
                                                 <input type="email" class="form-control mb-30" name="email" id="email" placeholder="E-mail">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Seu telefone">
+                                                <?php
+                                                if(isset($_SESSION['subject_error'])){
+                                                  echo '<small class="form-text text-muted">';
+                                                  echo $_SESSION['subject_error'];
+                                                  echo '</small>';
+                                                  unset($_SESSION['subject_error']);
+                                                }
+                                                ?>
+                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Assunto">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12">
                                             <div class="form-group">
+                                                <?php
+                                                if(isset($_SESSION['message_error'])){
+                                                  echo '<small class="form-text text-muted">';
+                                                  echo $_SESSION['message_error'];
+                                                  echo '</small>';
+                                                  unset($_SESSION['message_error']);
+                                                }
+                                                ?>
                                                 <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Sua mensagem *"></textarea>
                                             </div>
                                         </div>
