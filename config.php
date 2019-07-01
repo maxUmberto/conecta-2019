@@ -8,7 +8,7 @@ global $config;
 
 //Define a url padrão do meu código
 //Toda a lógica do código vai estar a partir dessa
-define('BASE_URL', 'http://localhost/conecta-2019-mvc');
+define('BASE_URL', 'http://localhost/conecta-2019');
 
 $config = array();
 
