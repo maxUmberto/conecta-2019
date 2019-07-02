@@ -908,7 +908,14 @@
                         <div class="contact_form">
                             <form action="<?php echo BASE_URL; ?>/home/formulario" method="post" id="main_contact_form">
                                 <div class="contact_input_area">
-                                    <div id="success_fail_info"></div>
+                                    <div id="success_fail_info">
+                                      <?php
+                                        if(isset($_SESSION['contact'])){
+                                          echo $_SESSION['contact']['message'];
+                                          unset($_SESSION['contact']);
+                                        }
+                                      ?>
+                                    </div>
                                     <div class="row">
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
