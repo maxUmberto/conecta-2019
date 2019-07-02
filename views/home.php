@@ -914,76 +914,81 @@
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
                                                 <?php
-                                                if(isset($_SESSION['name_error'])){
+                                                if(isset($_SESSION['error']['name'])){
                                                   echo '<small class="form-text text-muted">';
-                                                  echo $_SESSION['name_error'];
+                                                  echo $_SESSION['error']['name'];
                                                   echo '</small>';
-                                                  unset($_SESSION['name_error']);
+                                                  unset($_SESSION['error']['name']);
                                                 }
                                                 ?>
-                                                <input type="text" class="form-control mb-30" name="name" id="name" placeholder="Seu Nome">
+                                                <input type="text" class="form-control mb-30" name="name" id="name" placeholder="Seu Nome" value="<?php echo isset($_SESSION['form'])? $_SESSION['form']['name'] : '' ?>">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
                                                 <?php
-                                                if(isset($_SESSION['sobrenome_error'])){
+                                                if(isset($_SESSION['error']['lastname'])){
                                                   echo '<small class="form-text text-muted">';
-                                                  echo $_SESSION['sobrenome_error'];
+                                                  echo $_SESSION['error']['lastname'];
                                                   echo '</small>';
-                                                  unset($_SESSION['sobrenome_error']);
+                                                  unset($_SESSION['error']['lastname']);
                                                 }
                                                 ?>
-                                                <input type="text" class="form-control mb-30" name="lastname" id="lastname" placeholder="Sobrenome">
+                                                <input type="text" class="form-control mb-30" name="lastname" id="lastname" placeholder="Sobrenome" value="<?php echo isset($_SESSION['form'])? $_SESSION['form']['lastname'] : '' ?>">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
                                                 <?php
-                                                if(isset($_SESSION['email_error'])){
+                                                if(isset($_SESSION['error']['email'])){
                                                   echo '<small class="form-text text-muted">';
-                                                  echo $_SESSION['email_error'];
+                                                  echo $_SESSION['error']['email'];
                                                   echo '</small>';
-                                                  unset($_SESSION['email_error']);
+                                                  unset($_SESSION['error']['email']);
                                                 }
                                                 ?>
-                                                <input type="email" class="form-control mb-30" name="email" id="email" placeholder="E-mail">
+                                                <input type="email" class="form-control mb-30" name="email" id="email" placeholder="E-mail" value="<?php echo isset($_SESSION['form'])? $_SESSION['form']['email'] : '' ?>">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
                                                 <?php
-                                                if(isset($_SESSION['subject_error'])){
+                                                if(isset($_SESSION['error']['subject'])){
                                                   echo '<small class="form-text text-muted">';
-                                                  echo $_SESSION['subject_error'];
+                                                  echo $_SESSION['error']['subject'];
                                                   echo '</small>';
-                                                  unset($_SESSION['subject_error']);
+                                                  unset($_SESSION['error']['subject']);
                                                 }
                                                 ?>
-                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Assunto">
+                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Assunto" value="<?php echo isset($_SESSION['form'])? $_SESSION['form']['subject'] : '' ?>">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <?php
-                                                if(isset($_SESSION['message_error'])){
+                                                if(isset($_SESSION['error']['message'])){
                                                   echo '<small class="form-text text-muted">';
-                                                  echo $_SESSION['message_error'];
+                                                  echo $_SESSION['error']['message'];
                                                   echo '</small>';
-                                                  unset($_SESSION['message_error']);
+                                                  unset($_SESSION['error']['message']);
                                                 }
                                                 ?>
-                                                <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Sua mensagem *"></textarea>
+                                                <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Sua mensagem *"><?php echo isset($_SESSION['form'])? $_SESSION['form']['message'] : '' ?></textarea>
                                             </div>
                                         </div>
                                         <!-- Button -->
                                         <div class="col-12">
                                             <button type="submit" class="btn confer-btn">Enviar Mensagem <i class="zmdi zmdi-long-arrow-right"></i></button>
                                         </div>
+                                        <?php
+                                          if(isset($_SESSION['form'])){
+                                            unset($_SESSION['form']);
+                                          }
+                                        ?>
                                     </div>
                                 </div>
                             </form>
