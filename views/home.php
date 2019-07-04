@@ -83,21 +83,21 @@
     <!-- About Us And Countdown Area End -->
 
     <!-- Our Speakings Area Start -->
-    <section id="palestrantes" class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(assets/img/bg-img/3.jpg);">
+    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(assets/img/bg-img/3.jpg);">
         <div class="container">
             <div class="row">
                 <!-- Heading -->
                 <div class="col-12">
                     <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
                         <p>Conecta 2019</p>
-                        <h4>Palestrantes</h4>
+                        <h4>Nossos palestrantes</h4>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <!-- Palestrante 1 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -112,14 +112,13 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Palestrante 2 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -134,14 +133,13 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Palestrante 3 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -156,14 +154,13 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Palestrante 4 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -178,14 +175,13 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Palestrante 5 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -200,14 +196,13 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Palestrante 6 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -222,14 +217,13 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Palestrante 7 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -244,14 +238,13 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Palestrante 8 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -266,14 +259,13 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Palestrante 9 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -288,14 +280,13 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-
-                 <!-- Palestrante 10 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -310,14 +301,13 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-
-                 <!-- Palestrante 11 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -332,14 +322,13 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-
-                 <!-- Palestrante 12 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
+                <!-- Single Speaker Area -->
+                <div class="col-6 col-md-3 col-sm-4 col-lg-3 col-xs-4">
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
@@ -354,84 +343,11 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
+                            <h5>Fulano de tal</h5>
+                            <p>Fundador da ABC</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                 <!-- Palestrante 13 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="assets/img/bg-img/user.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Palestrante 14 -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="assets/img/bg-img/user.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Palestrante 15  -->
-                <div class="col-4 col-sm-3 col-lg-2 col-xs-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="assets/img/bg-img/user.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>#</h5>
-                            <p>#</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="col-12">
-                    <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
-                        <a class="btn confer-btn-white" href="#">view all Speaker <i class="zmdi zmdi-long-arrow-right"></i></a>
-                    </div>
-                </div>-->
             </div>
         </div>
     </section>
