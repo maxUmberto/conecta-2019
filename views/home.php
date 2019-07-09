@@ -19,8 +19,8 @@
                         <!-- Welcome Text -->
                         <div class="col-12">
                             <div class="welcome-text text-right">
-                                <h2 data-animation="fadeInUp" data-delay="300ms">Conecta <br>Academico</h2>
-                                <h6 data-animation="fadeInUp" data-delay="500ms">P1, UFRRJ, Rio de Janeiro</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Conecta<br>Academico</h2>
+                                <h6 data-animation="fadeInUp" data-delay="500ms">Salão Azul, P1, UFRRJ</h6>
                                 <!-- POR ENQUANTO SEM NECESSIDADE
                                 <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
                                     <a href="#" class="btn confer-btn">More Information <i class="zmdi zmdi-long-arrow-right"></i></a>
@@ -31,29 +31,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(assets/img/bg-img/45.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <!-- Welcome Text -->
-                        <div class="col-12">
-                            <div class="welcome-text-two text-center">
-                                <h5 data-animation="fadeInUp" data-delay="100ms">SASI apresenta:</h5>
-                                <h2 data-animation="fadeInUp" data-delay="300ms">Conecta Academico</h2>
-                                <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                    <a href="#" class="btn confer-btn m-2">Saiba Mais <i class="zmdi zmdi-long-arrow-right"></i></a>
-                                    <a href="#" class="btn confer-btn m-2">Get Tickets <i class="zmdi zmdi-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scroll Icon -->
-        <div class="icon-scroll" id="scrollDown"></div>
     </section>
     <!-- Welcome Area End -->
 
@@ -373,15 +350,15 @@
                         <!-- Nav Tabs -->
                         <ul class="nav nav-tabs wow fadeInUp" data-wow-delay="300ms" id="conferScheduleTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="monday-tab" data-toggle="tab" href="#step-one" role="tab" aria-controls="step-one" aria-expanded="true">Terça <br> <span>8 de outubro, 2019</span></a>
+                                <a class="nav-link active" id="monday-tab" data-toggle="tab" href="#step-one" role="tab" aria-controls="step-one" aria-expanded="true">Terça <br> <span>8 / 10 / 2019</span></a>
                             </li>
                             <!-- Nav Item -->
                             <li class="nav-item">
-                                <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#step-two" role="tab" aria-controls="step-two" aria-expanded="true">Quarta <br> <span>9 de outubro, 2019</span></a>
+                                <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#step-two" role="tab" aria-controls="step-two" aria-expanded="true">Quarta <br> <span>9 / 10 / 2019</span></a>
                             </li>
                             <!-- Nav Item -->
                             <li class="nav-item">
-                                <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#step-three" role="tab" aria-controls="step-three" aria-expanded="true">Quinta <br> <span>10 de outubro, 2019</span></a>
+                                <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#step-three" role="tab" aria-controls="step-three" aria-expanded="true">Quinta <br> <span>10 / 10 / 2019</span></a>
                             </li>
                         </ul>
                     </div>

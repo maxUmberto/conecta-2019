@@ -13,10 +13,9 @@
 
                         <!-- Social Info -->
                         <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                            <a href="https://www.facebook.com/conectacc" target="_blank"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="https://www.instagram.com/conectaufrrj" target="_blank"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="https://twitter.com/conectaufrrj" target="_blank"><i class="zmdi zmdi-twitter"></i></a>
                         </div>
                     </div>
                 </div>
