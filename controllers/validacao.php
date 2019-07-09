@@ -34,7 +34,7 @@ function validaAssunto($subject){
   if(empty($subject) || $subject == ''){
     $_SESSION['error']['subject'] = 'Campo em branco';
     return true;
-  } else if (!preg_match("/^[0-9a-zA-ZÀ-ú]*$/",$subject)) {
+  } else if (!preg_match("/^[0-9a-zA-ZÀ-ú ]*$/",$subject)) {
     $_SESSION['error']['subject'] = "Assunto inválido";
     return true;
   }

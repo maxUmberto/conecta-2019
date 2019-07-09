@@ -2552,7 +2552,6 @@ input:required {
   border-radius: 0;
   border-bottom: 1px solid #4d507d;
   font-size: 15px;
-  text-transform: capitalize;
   color: #9293bc;
   padding-left: 0; }
   .form-group .form-control:focus {
