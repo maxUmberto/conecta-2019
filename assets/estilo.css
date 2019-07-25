@@ -2665,3 +2665,15 @@ input:required {
         margin-right: 3px; }
 
 /*# sourceMappingURL=style.css.map */
+
+.patrocinador{
+	border: 1px solid #ff6b21;
+	-webkit-transition-duration: 500ms;
+	-o-transition-duration: 500ms;
+	transition-duration: 500ms;
+  padding: 15px;
+}
+
+.patrocinador:hover, .patrocinador:focus {
+    border-color: #f8d510;
+}

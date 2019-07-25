@@ -330,7 +330,6 @@
     </section>
     <!-- Our Speakings Area End -->
 
-
     <!-- Our Schedule Area Start -->
     <section id="calendario" class="our-schedule-area section-padding-100">
         <div class="container">
@@ -698,62 +697,79 @@
                 </div>
             </div>
 
+            <!-- Premium sponsor -->
             <div class="row">
-                <div class="col-12">
-                    <!-- Our Sponsor area -->
-                    <div class="our-sponsor-area d-flex flex-wrap">
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-1.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-2.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-3.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-4.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-5.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-6.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-7.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-1.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-1.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-1.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-1.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="assets/img/core-img/p-8.png" alt=""></a>
-                        </div>
-                    </div>
+              <!-- Single Sponsor Area -->
+              <div class="col-12 col-md-6 col-sm-12 col-lg-6 col-xs-12">
+                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp patrocinador" data-wow-delay="300ms">
+                  <!-- Thumb -->
+                  <div class="speaker-single-thumb img-fluid">
+                    <img src="assets/img/core-img/p-1.png" alt="">
+                  </div>
                 </div>
+              </div>
+              <!-- Single Sponsor Area -->
+
+              <!-- Single Sponsor Area -->
+              <div class="col-12 col-md-6 col-sm-12 col-lg-6 col-xs-12">
+                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp patrocinador" data-wow-delay="300ms">
+                  <!-- Thumb -->
+                  <div class="speaker-single-thumb img-fluid">
+                    <img src="assets/img/core-img/p-2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- Single Sponsor Area End -->
             </div>
+            <!-- Premium Sponsor end -->
+
+            <!-- Normal Sponsor -->
+            <div class="row">
+              <!-- Single Sponsor Area -->
+              <div class="col-6 col-md-3 col-sm-6 col-lg-3 col-xs-6">
+                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp patrocinador" data-wow-delay="300ms">
+                  <!-- Thumb -->
+                  <div class="speaker-single-thumb img-fluid">
+                    <img src="assets/img/core-img/p-3.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- Single Sponsor Area End -->
+
+              <!-- Single Sponsor Area -->
+              <div class="col-6 col-md-3 col-sm-6 col-lg-3 col-xs-6">
+                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp patrocinador" data-wow-delay="300ms">
+                  <!-- Thumb -->
+                  <div class="speaker-single-thumb img-fluid">
+                    <img src="assets/img/core-img/p-3.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- Single Sponsor Area End -->
+
+              <!-- Single Sponsor Area -->
+              <div class="col-6 col-md-3 col-sm-6 col-lg-3 col-xs-6">
+                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp patrocinador" data-wow-delay="300ms">
+                  <!-- Thumb -->
+                  <div class="speaker-single-thumb img-fluid">
+                    <img src="assets/img/core-img/p-3.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- Single Sponsor Area End -->
+
+              <!-- Single Sponsor Area -->
+              <div class="col-6 col-md-3 col-sm-6 col-lg-3 col-xs-6">
+                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp patrocinador" data-wow-delay="300ms">
+                  <!-- Thumb -->
+                  <div class="speaker-single-thumb img-fluid">
+                    <img src="assets/img/core-img/p-3.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- Single Sponsor Area End -->
             </div>
+            <!-- Normal Sponsor -->
         </div>
     </section>
     <!-- Our Sponsor And Client Area End -->
