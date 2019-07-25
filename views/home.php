@@ -54,6 +54,70 @@
                         </div>
                     </div>
                 </div>
+                <!-- Contact Form -->
+                <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
+                    <div class="col-12">
+                        <div class="section-heading-2 text-center wow fadeInUp inscricao-titulo" data-wow-delay="300ms">
+                            <h4>Inscreva-se</h4>
+                        </div>
+                    </div>
+                    <div class="contact_form">
+                        <form action="<?php echo BASE_URL; ?>/home/formulario" method="post" id="main_contact_form">
+                            <div class="contact_input_area">
+                                <div id="success_fail_info">
+                                </div>
+                                <div class="row">
+                                    <!-- Form Group -->
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control mb-30 inscricao" name="name" id="name" placeholder="Seu Nome Completo">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control mb-30 inscricao" name="email" id="email" placeholder="E-mail">
+                                        </div>
+                                    </div>
+                                    <!-- Form Group -->
+                                    <div class="col-12 col-lg-4 col-md-4">
+                                        <div class="form-group">
+                                          <select class="form-control mb-30 inscricao" id="instituicao" name="instituicao">
+                                              <option disabled selected>Selecione a Instituição</option>
+                                              <option>UFRRJ - Seropédica</option>
+                                              <option>UFRRJ - Nova Iguaçu</option>
+                                              <option>Outra</option>
+                                          </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-4">
+                                      <div class="form-group">
+                                        <select class="form-control mb-30 inscricao" id="instituicao" name="instituicao">
+                                          <option disabled selected>Sexo</option>
+                                          <option>Masculino</option>
+                                          <option>Feminino</option>
+                                          <option>Outro</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-4">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control inscricao" name="matricula" id="matricula" placeholder="Matrícula">
+                                        </div>
+                                        <div class="form-group inscricao">
+                                          <div class="form-check mb-30">
+                                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                                              <label class="form-check-label form-control-sm" for="gridCheck">Não possuo matrícula</div>
+                                        </div>
+                                    </div>
+                                    <!-- Button -->
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn confer-btn">Inscrever-se <i class="zmdi zmdi-long-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
