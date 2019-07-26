@@ -8,7 +8,7 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Footer Logo -->
-                        <a href="#" class="footer-logo"><img src="assets/img/core-img/logo2.png" alt=""></a>
+                        <a href="#" class="footer-logo"><img src="assets/img/core-img/conecta-letra-branca.png" alt=""></a>
                         <!-- <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain.</p> -->
 
                         <!-- Social Info -->
@@ -30,7 +30,7 @@
                     <div class="footer-gallery">
                       <div class="row">
                         <div class="col-6">
-                          <img src="assets/img/bg-img/21.png" alt="">
+                          <img src="assets/img/bg-img/dasi.png" alt="">
                         </div>
                         <div class="col-6">
                           <img src="assets/img/bg-img/22.png" alt="">
