@@ -28,13 +28,18 @@ function validaSobrenome($lastname, $erro){
   }
 }
 
-function validaEmail($email, $string, $erro){
+function validaEmail($email, $string, $erro, $inscricao = ''){
   if(empty($email) || $email == ''){
     $_SESSION[$string]['email'] = 'Campo em branco';
     return true;
   } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $_SESSION[$string]['email'] = 'Email inválido';
     return true;
+  } else if(!empty($inscricao)){
+    if($inscricao->confereEmail($_POST['email'], $erro)){
+      $_SESSION['inscricao']['email'] = 'Email já cadastrado';
+      return true;
+    }
   }
 
   if($erro == true){
@@ -88,7 +93,7 @@ function validaSexo($sex, $erro){
   }
 }
 
-function validaMatricula($matricula, $erro){
+function validaMatricula($matricula, $erro, $inscricao){
   if(empty($matricula)){
     $_SESSION['inscricao']['matricula'] = 'Campo em branco';
     return true;
@@ -97,6 +102,9 @@ function validaMatricula($matricula, $erro){
     return true;
   } else if(strlen($matricula) != 10 ){
     $_SESSION['inscricao']['matricula'] = 'Quantidade de caracteres inválida';
+    return true;
+  } else if($inscricao->confereEmail($_POST['email'], $erro)){
+    $_SESSION['inscricao']['matricula'] = 'Matricula já cadastrada';
     return true;
   }
 

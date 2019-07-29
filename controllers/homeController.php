@@ -34,11 +34,12 @@ class homeController extends Controller {
   }
 
   public function inscricao(){
+    $inscricao = new Inscricao();
     $erro = false;
     require 'validacao.php';
 
     $erro = validaNome($_POST['name'], 'inscricao', $erro);
-    $erro = validaEmail($_POST['email'], 'inscricao', $erro);
+    $erro = validaEmail($_POST['email'], 'inscricao', $erro, $inscricao);
 
     if(isset($_POST['instituicao'])){
       $erro = validaInstituicao($_POST['instituicao'], $erro);
@@ -58,7 +59,7 @@ class homeController extends Controller {
       $_SESSION['inscricao']['matricula'] = 'Se não é aluno, o campo matrícula deve ficar em branco';
       $erro = true;
     }else if(!isset($_POST['matricula-checkbox'])){
-      $erro = validaMatricula($_POST['matricula'], $erro);
+      $erro = validaMatricula($_POST['matricula'], $erro, $inscricao);
     }
 
     if($erro != false){
@@ -69,15 +70,15 @@ class homeController extends Controller {
         'sex' => $_POST['sex'],
         'matricula' => $_POST['matricula'],
       );
-      echo '<pre>';
-      print_r($_SESSION['inscricao_']);
-      echo '</pre>';
-      //exit;
       header ('Location: '.BASE_URL.'/home#inscricao');
       die();
-    }/*else{
-      $this->enviaEmail($_POST['name'],$_POST['lastname'],$_POST['email'],$_POST['subject'],$_POST['message']);
-    }*/
+    }else{
+      echo 'tudo okay ate aqui';exit;
+
+      if($inscricao->salvaInscricao()){
+        echo 'foi';exit;
+      }
+    }
   }
 
   private function enviaEmail($name, $lastname, $email, $subject, $message){
