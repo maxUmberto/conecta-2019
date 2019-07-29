@@ -12,10 +12,10 @@ class homeController extends Controller {
     $erro = false;
     require 'validacao.php';
 
-    $erro = validaNome($_POST['name']);
-    $erro = validaSobrenome($_POST['lastname']);
-    $erro = validaEmail($_POST['email']);
-    $erro = validaAssunto($_POST['subject']);
+    $erro = validaNome($_POST['name'], 'error', $erro);
+    $erro = validaSobrenome($_POST['lastname'], $erro);
+    $erro = validaEmail($_POST['email'], 'error', $erro);
+    $erro = validaAssunto($_POST['subject'], $erro);
     $erro = validaMensagem($_POST['message'], $erro);
 
     if($erro != false){
@@ -31,6 +31,53 @@ class homeController extends Controller {
     }else{
       $this->enviaEmail($_POST['name'],$_POST['lastname'],$_POST['email'],$_POST['subject'],$_POST['message']);
     }
+  }
+
+  public function inscricao(){
+    $erro = false;
+    require 'validacao.php';
+
+    $erro = validaNome($_POST['name'], 'inscricao', $erro);
+    $erro = validaEmail($_POST['email'], 'inscricao', $erro);
+
+    if(isset($_POST['instituicao'])){
+      $erro = validaInstituicao($_POST['instituicao'], $erro);
+    }else{
+      $_SESSION['inscricao']['instituicao'] = 'Selecione uma instituição';
+      $erro = true;
+    }
+
+    if(isset($_POST['sex'])){
+      $erro = validaSexo($_POST['sex'], $erro);
+    }else{
+      $_SESSION['inscricao']['sex'] = 'Selecione um sexo';
+      $erro = true;
+    }
+
+    if(isset($_POST['matricula-chechbox']) && $_POST['matricula'] != ''){
+      $_SESSION['inscricao']['matricula'] = 'Se não é aluno, o campo matrícula deve ficar em branco';
+      $erro = true;
+    }else if(!isset($_POST['matricula-checkbox'])){
+      $erro = validaMatricula($_POST['matricula'], $erro);
+    }
+
+    if($erro != false){
+      $_SESSION['inscricao_'] = array(
+        'name' => $_POST['name'],
+        'email' => $_POST['email'],
+        'instituicao' => $_POST['instituicao'],
+        'sex' => $_POST['sex'],
+        'matricula' => $_POST['matricula'],
+      );
+      echo '<pre>';
+      print_r($_SESSION['inscricao_']);
+      echo '</pre>';
+      //exit;
+      header ('Location: '.BASE_URL.'/home#inscricao');
+      die();
+    }/*else{
+      $this->enviaEmail($_POST['name'],$_POST['lastname'],$_POST['email'],$_POST['subject'],$_POST['message']);
+    }*/
   }
 
   private function enviaEmail($name, $lastname, $email, $subject, $message){
