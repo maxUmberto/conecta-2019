@@ -161,6 +161,7 @@ class homeController extends Controller {
     $mail = new PHPMailer;
     //Tell PHPMailer to use SMTP - requires a local mail server
     //Faster and safer than using mail()
+    $mail->CharSet = "UTF-8";
     $mail->isSMTP();
     $mail->SMTPDebug = 2;
     $mail->SMTPAutoTLS = false;
