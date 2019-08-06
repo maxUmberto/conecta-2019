@@ -65,6 +65,12 @@
                         <form action="<?php echo BASE_URL; ?>/home/inscricao" method="post" id="main_contact_form">
                             <div class="contact_input_area">
                                 <div id="success_fail_info">
+                                  <?php
+                                    if(isset($_SESSION['inscricao']['message'])){
+                                      echo $_SESSION['inscricao']['message'];
+                                      unset($_SESSION['inscricao']['message']);
+                                    }
+                                  ?>
                                 </div>
                                 <div class="row">
                                     <!-- Form Group -->

@@ -73,10 +73,26 @@ class homeController extends Controller {
       header ('Location: '.BASE_URL.'/home#inscricao');
       die();
     }else{
-      echo 'tudo okay ate aqui';exit;
-
       if($inscricao->salvaInscricao()){
-        echo 'foi';exit;
+
+        $this->confirmacaoEmail($_POST);
+
+      } else{
+
+        $_SESSION['inscricao_'] = array(
+          'name' => $_POST['name'],
+          'email' => $_POST['email'],
+          'instituicao' => $_POST['instituicao'],
+          'sex' => $_POST['sex'],
+          'matricula' => $_POST['matricula'],
+        );
+
+        $_SESSION['inscricao']['message'] = '<div class="alert alert-warning text-center" role="alert">'.
+                                          'Houve um erro na inscrição. Por favor, tente novamente'.
+                                          '</div>';
+
+        header ('Location: '.BASE_URL.'/home#inscricao');
+        die();
       }
     }
   }
@@ -137,6 +153,65 @@ class homeController extends Controller {
       }//Fim do if mail->send()
     }//fim do if addReplyTo
   }//fim da enviaEmail
+
+  private function confirmacaoEmail($_dados = array()){
+    date_default_timezone_set('Etc/UTC');
+    require 'vendor/autoload.php';
+    //Create a new PHPMailer instance
+    $mail = new PHPMailer;
+    //Tell PHPMailer to use SMTP - requires a local mail server
+    //Faster and safer than using mail()
+    $mail->isSMTP();
+    $mail->SMTPDebug = 2;
+    $mail->SMTPAutoTLS = false;
+    $mail->Host = 'email.ufrrj.br';
+    $mail->Port = 25;
+    //Use a fixed address in your own domain as the from address
+    //**DO NOT** use the submitter's address here as it will be forgery
+    //and will cause your messages to fail SPF checks
+    $mail->setFrom('conectaufrrj@gmail.com', 'Conecta UFRRJ');
+    //Send the message to yourself, or whoever should receive contact for submissions
+    $mail->addAddress($_POST['email'], 'Inscrição Conecta');
+    //Put the submitter's address in a reply-to header
+    //This will fail if the address provided is invalid,
+    //in which case we should ignore the whole request
+    if($mail->addReplyTo('conectaufrrj@gmail.com', 'Conecta UFRRJ')) {
+      $mail->Subject = 'Confirmação de Inscrição';
+      //Keep it simple - don't use HTML
+      $mail->isHTML(true);
+      //Build a simple message body
+      $mail->Body = 'Olá <b>'.$_POST['name'].'</b>.<br/>'.
+                    'Agradecemos sua inscrição no Conecta UFRRJ 2019, que ocorrerá nos dias <b>8, 9 e 10 de outubro</b>.<br />'.
+                    'Sua inscrição está confirmada, aguardamos sua presença no evento :)<br /><br /><Br /><br />'.
+                    'Comissão de organização Conecta UFRRJ 2019';
+
+      if (!$mail->send()) {
+          //The reason for failing to send will be in $mail->ErrorInfo
+          //but you shouldn't display errors to users - process the error, log it on your server.
+          //echo $mail->ErrorInfo;exit;
+          $_SESSION['inscricao_'] = array(
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'instituicao' => $_POST['instituicao'],
+            'sex' => $_POST['sex'],
+            'matricula' => $_POST['matricula'],
+          );
+
+          $_SESSION['inscricao']['message'] = '<div class="alert alert-warning text-center" role="alert">'.
+                                            'Oops, houve um erro interno. Pode ser que sua inscrição não tenha sido confirmada. Tente novamente ou entre em contato com o evento'.
+                                            '</div>';
+          header ('Location: '.BASE_URL.'/home#inscricao');
+          die();
+      } else {
+        $_SESSION['inscricao']['message'] = '<div class="alert alert-success text-center" role="alert">'.
+                                          '<p>Inscrição confirmada!!</p>'.
+                                          '<p>Enviamos um email de confirmação pra você. Não esqueça de checar sua caixa de Spam</p>'.
+                                          '</div>';
+        header ('Location: '.BASE_URL.'/home#inscricao');
+        die();
+      }//Fim do if mail->send()
+    }//fim do if addReplyTo
+  }//Fim do confirmacaoEmail
 
 }
 ?>

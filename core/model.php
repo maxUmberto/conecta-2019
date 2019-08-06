@@ -10,7 +10,7 @@ class Model {
     try{
       $this->db = new PDO("mysql:dbname=".$config['dbname'].';host='.$config['dbhost'],$config['dbuser'],$config['dbpass']);
       $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch(Exceptio $e){
+    } catch(Exception $e){
       echo $e->getMessage();
     }
 

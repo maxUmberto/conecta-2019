@@ -103,7 +103,7 @@ function validaMatricula($matricula, $erro, $inscricao){
   } else if(strlen($matricula) != 10 ){
     $_SESSION['inscricao']['matricula'] = 'Quantidade de caracteres inválida';
     return true;
-  } else if($inscricao->confereEmail($_POST['email'], $erro)){
+  } else if($inscricao->confereMatricula($_POST['matricula'], $erro)){
     $_SESSION['inscricao']['matricula'] = 'Matricula já cadastrada';
     return true;
   }
