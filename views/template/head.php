@@ -11,7 +11,7 @@
     <title>Conecta 2019</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="<?php echo BASE_URL; ?>/assets/img/core-img/favicon.png">
+    <link rel="icon" href="<?php echo BASE_URL; ?>/assets/img/core-img/conecta-branco.svg">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/estilo.css">

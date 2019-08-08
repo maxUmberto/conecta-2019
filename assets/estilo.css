@@ -1134,7 +1134,8 @@ input:required {
 .about-us-countdown-area {
   position: relative;
   z-index: 1;
-  background-color: #171B20; }
+  background-color: #171B20;
+  padding-bottom: 5px;}
   .about-us-countdown-area .about-content-text h6 {
     font-size: 14px;
     font-weight: 500;
@@ -2676,4 +2677,17 @@ input:required {
 
 .patrocinador:hover, .patrocinador:focus {
     border-color: #f8d510;
+}
+
+.form-check-label{
+  color: #6b747c;
+}
+
+.inscricao-titulo{
+  margin-bottom: 30px;
+  margin-top: -40px;
+}
+
+.inscricao{
+  color: #6b747c !important;
 }

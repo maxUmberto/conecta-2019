@@ -13,9 +13,9 @@ define('BASE_URL', 'http://localhost/conecta-2019');
 $config = array();
 
 if(ENVIRONMENT == 'development'){
-  $config['dbname'] = '';
-  $config['dbhost'] = '';
-  $config['dbuser'] = '';
+  $config['dbname'] = 'conecta';
+  $config['dbhost'] = 'localhost';
+  $config['dbuser'] = 'root';
   $config['dbpass'] = '';
 }else{
   $config['dbname'] = '';

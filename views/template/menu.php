@@ -36,8 +36,10 @@
                         </ul>
 
                         <!-- Get Tickets Button
-                        <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Login / Cadastrar <i class="zmdi zmdi-long-arrow-right"></i></a>
-                    </div>-->
+                        <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
+                            <a href="#inscricao" class="btn confer-btn">Inscreva-se <i class="zmdi zmdi-long-arrow-right"></i></a>
+                        </div>-->
+                    </div>
                     <!-- Nav End -->
                 </div>
             </nav>

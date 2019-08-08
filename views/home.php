@@ -39,7 +39,7 @@
         <!-- Counter Up Area -->
         <div class="countdown-up-area">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center"  id="inscricao">
                     <div class="col-12 col-md-3">
                         <!-- Countdown Text -->
                         <div class="countdown-content-text mb-100 wow fadeInUp" data-wow-delay="300ms">
@@ -52,6 +52,121 @@
                         <div class="countdown-timer mb-100 wow fadeInUp" data-wow-delay="300ms">
                             <div id="clock"></div>
                         </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
+                    <div class="col-12">
+                        <div class="section-heading-2 text-center wow fadeInUp inscricao-titulo" data-wow-delay="300ms">
+                            <h4>Inscreva-se</h4>
+                        </div>
+                    </div>
+                    <div class="contact_form">
+                        <form action="<?php echo BASE_URL; ?>/home/inscricao" method="post" id="main_contact_form">
+                            <div class="contact_input_area">
+                                <div id="success_fail_info">
+                                  <?php
+                                    if(isset($_SESSION['inscricao']['message'])){
+                                      echo $_SESSION['inscricao']['message'];
+                                      unset($_SESSION['inscricao']['message']);
+                                    }
+                                  ?>
+                                </div>
+                                <div class="row">
+                                    <!-- Form Group -->
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                          <?php
+                                          if(isset($_SESSION['inscricao']['name'])){
+                                            echo '<small class="form-text text-muted">';
+                                            echo $_SESSION['inscricao']['name'];
+                                            echo '</small>';
+                                            unset($_SESSION['inscricao']['name']);
+                                          }
+                                          ?>
+                                          <input type="text" class="form-control mb-30 inscricao" name="name" id="name" placeholder="Seu Nome Completo" value="<?php echo isset($_SESSION['inscricao_'])? $_SESSION['inscricao_']['name'] : '' ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                          <?php
+                                          if(isset($_SESSION['inscricao']['email'])){
+                                            echo '<small class="form-text text-muted">';
+                                            echo $_SESSION['inscricao']['email'];
+                                            echo '</small>';
+                                            unset($_SESSION['inscricao']['email']);
+                                          }
+                                          ?>
+                                          <input type="email" class="form-control mb-30 inscricao" name="email" id="email" placeholder="E-mail" value="<?php echo isset($_SESSION['inscricao_'])? $_SESSION['inscricao_']['email'] : '' ?>">
+                                        </div>
+                                    </div>
+                                    <!-- Form Group -->
+                                    <div class="col-12 col-lg-4 col-md-4">
+                                        <div class="form-group">
+                                          <?php
+                                          if(isset($_SESSION['inscricao']['instituicao'])){
+                                            echo '<small class="form-text text-muted">';
+                                            echo $_SESSION['inscricao']['instituicao'];
+                                            echo '</small>';
+                                            unset($_SESSION['inscricao']['instituicao']);
+                                          }
+                                          ?>
+                                          <select class="form-control mb-30 inscricao" id="instituicao" name="instituicao">
+                                              <option value="0" disabled selected>Selecione a Instituição</option>
+                                              <option value='1' <?php echo isset($_SESSION['inscricao_']['instituicao']) && $_SESSION['inscricao_']['instituicao'] == 1? 'selected' : '' ?>>UFRRJ - Seropédica</option>
+                                              <option value="2" <?php echo isset($_SESSION['inscricao_']['instituicao']) && $_SESSION['inscricao_']['instituicao'] == 2? 'selected' : '' ?>>UFRRJ - Nova Iguaçu</option>
+                                              <option value="3" <?php echo isset($_SESSION['inscricao_']['instituicao']) && $_SESSION['inscricao_']['instituicao'] == 3? 'selected' : '' ?>>Outra</option>
+                                          </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-4">
+                                      <div class="form-group">
+                                        <?php
+                                        if(isset($_SESSION['inscricao']['sex'])){
+                                          echo '<small class="form-text text-muted">';
+                                          echo $_SESSION['inscricao']['sex'];
+                                          echo '</small>';
+                                          unset($_SESSION['inscricao']['sex']);
+                                        }
+                                        ?>
+                                        <select class="form-control mb-30 inscricao" id="sex" name="sex">
+                                          <option value="0" disabled selected>Sexo</option>
+                                          <option value="1" <?php echo isset($_SESSION['inscricao_']['sex']) && $_SESSION['inscricao_']['sex'] == 1? 'selected' : '' ?>>Masculino</option>
+                                          <option value="2" <?php echo isset($_SESSION['inscricao_']['sex']) && $_SESSION['inscricao_']['sex'] == 2? 'selected' : '' ?>>Feminino</option>
+                                          <option value="3" <?php echo isset($_SESSION['inscricao_']['sex']) && $_SESSION['inscricao_']['sex'] == 3? 'selected' : '' ?>>Outro</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-4">
+                                        <div class="form-group">
+                                          <?php
+                                          if(isset($_SESSION['inscricao']['matricula'])){
+                                            echo '<small class="form-text text-muted">';
+                                            echo $_SESSION['inscricao']['matricula'];
+                                            echo '</small>';
+                                            unset($_SESSION['inscricao']['matricula']);
+                                          }
+                                          ?>
+                                          <input type="number" class="form-control inscricao" name="matricula" id="matricula" placeholder="Matrícula" value="<?php echo isset($_SESSION['inscricao_'])? $_SESSION['inscricao_']['matricula'] : '' ?>">
+                                        </div>
+                                        <div class="form-group inscricao">
+                                          <div class="form-check mb-30">
+                                              <input class="form-check-input" name="matricula-checkbox" type="checkbox" id="gridCheck">
+                                              <label class="form-check-label form-control-sm" for="gridCheck">Não possuo matrícula na UFRRJ</div>
+                                        </div>
+                                    </div>
+                                    <!-- Button -->
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn confer-btn">Inscrever-se <i class="zmdi zmdi-long-arrow-right"></i></button>
+                                    </div>
+                                    <?php
+                                      if(isset($_SESSION['inscricao_'])){
+                                        unset($_SESSION['inscricao_']);
+                                      }
+                                    ?>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
