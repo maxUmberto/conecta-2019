@@ -34,7 +34,7 @@ CREATE TABLE `usuarios` (
   `email` varchar(100) NOT NULL UNIQUE,
   `instituicao` tinyint(1) NOT NULL,
   `sexo` tinyint(1) NOT NULL,
-  `matricula` int(10) NOT NULL UNIQUE
+  `matricula` int(10) UNIQUE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --

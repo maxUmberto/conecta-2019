@@ -151,7 +151,7 @@
                                         </div>
                                         <div class="form-group inscricao">
                                           <div class="form-check mb-30">
-                                              <input class="form-check-input" name="matricula-chechbox" type="checkbox" id="gridCheck">
+                                              <input class="form-check-input" name="matricula-checkbox" type="checkbox" id="gridCheck">
                                               <label class="form-check-label form-control-sm" for="gridCheck">Não possuo matrícula na UFRRJ</div>
                                         </div>
                                     </div>

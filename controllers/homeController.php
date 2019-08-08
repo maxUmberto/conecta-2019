@@ -55,10 +55,10 @@ class homeController extends Controller {
       $erro = true;
     }
 
-    if(isset($_POST['matricula-chechbox']) && $_POST['matricula'] != ''){
+    if(!empty($_POST['matricula-checkbox']) && $_POST['matricula'] != ''){
       $_SESSION['inscricao']['matricula'] = 'Se não é aluno, o campo matrícula deve ficar em branco';
       $erro = true;
-    }else if(!isset($_POST['matricula-checkbox'])){
+    }else if(empty($_POST['matricula-checkbox'])){
       $erro = validaMatricula($_POST['matricula'], $erro, $inscricao);
     }
 

@@ -32,13 +32,22 @@ class Inscricao extends Model{
   }
 
   public function salvaInscricao(){
-    $sql = "INSERT INTO usuarios SET nome = :nome, email = :email, instituicao = :instituicao, sexo = :sexo, matricula = :matricula";
-    $sql = $this->db->prepare($sql);
+    if(!empty($_POST['matricula-checkbox'])){
+      $sql = "INSERT INTO usuarios SET nome = :nome, email = :email, instituicao = :instituicao, sexo = :sexo, matricula = :matricula";
+      $sql = $this->db->prepare($sql);
+      $sql->bindValue(':matricula', null); 
+    }
+    else{
+      $sql = "INSERT INTO usuarios SET nome = :nome, email = :email, instituicao = :instituicao, sexo = :sexo, matricula = :matricula";
+      $sql = $this->db->prepare($sql);
+      $sql->bindValue(':matricula', $_POST['matricula']);
+    }
+
+
     $sql->bindValue(':nome', $_POST['name']);
     $sql->bindValue(':email', $_POST['email']);
     $sql->bindValue(':instituicao', $_POST['instituicao']);
     $sql->bindValue(':sexo', $_POST['sex']);
-    $sql->bindValue(':matricula', $_POST['matricula']);
 
     if($sql->execute()){
       return true;
