@@ -35,7 +35,7 @@ class Inscricao extends Model{
     if(!empty($_POST['matricula-checkbox'])){
       $sql = "INSERT INTO usuarios SET nome = :nome, email = :email, instituicao = :instituicao, sexo = :sexo, matricula = :matricula";
       $sql = $this->db->prepare($sql);
-      $sql->bindValue(':matricula', null); 
+      $sql->bindValue(':matricula', null);
     }
     else{
       $sql = "INSERT INTO usuarios SET nome = :nome, email = :email, instituicao = :instituicao, sexo = :sexo, matricula = :matricula";
