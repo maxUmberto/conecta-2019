@@ -34,6 +34,12 @@ class loginController extends Controller{
                 $_SESSION['logged'] = true;
                 header('Location:'.BASE_URL.'/admin');
                 die();
+            }else{
+                $_SESSION['login']['error'] = '<div class="alert alert-warning text-center" role="alert">'.
+                                                    'Usuário ou senha inválidos' .
+                                                    '</div>';
+                header('Location:'.BASE_URL.'/login');
+                die();
             }
         }
     }

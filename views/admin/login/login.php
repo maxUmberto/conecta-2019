@@ -74,6 +74,14 @@ include 'views/template/head.php';
             </div>
             <div class="d-flex justify-content-center form_container">
                 <form method="post" action="<?php echo BASE_URL; ?>/login/logar">
+                    <div id="success_fail_info">
+                        <?php
+                        if(isset($_SESSION['login']['error'])){
+                            echo $_SESSION['login']['error'];
+                            unset($_SESSION['login']['error']);
+                        }
+                        ?>
+                    </div>
                     <?php
                     if(isset($_SESSION['login']['password'])){
                         echo '<small class="form-text text-muted">';

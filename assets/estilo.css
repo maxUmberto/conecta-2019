@@ -2691,3 +2691,8 @@ input:required {
 .inscricao{
   color: #6b747c !important;
 }
+
+/*CSS DO ADMIN*/
+.container-admin{
+  padding-top: 130px;
+}
