@@ -14,9 +14,18 @@ class Controller{
     include 'views/template/template.php';
   }
 
+  public function loadTemplateAdmin($viewName, $viewData = array()){
+    include 'views/template/templateAdmin.php';
+  }
+
   public function loadViewInTemplate($viewName, $viewData = array()){
     extract($viewData);
     include 'views/'.$viewName.'.php';
+  }
+
+  public function loadViewInTemplateAdmin($viewName, $viewData = array()){
+    extract($viewData);
+    include 'views/admin/'.$viewName.'.php';
   }
 
 }
