@@ -2,4 +2,5 @@
 .htaccess
 .config.php
 .idea
-.vendor/composer
+composer.phar
+/vendor/
