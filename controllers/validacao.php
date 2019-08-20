@@ -113,4 +113,26 @@ function validaMatricula($matricula, $erro, $inscricao){
   }
 }
 
+function validaUsuario($usuario, $erro){
+  if(empty($usuario) || $usuario == ''){
+    $_SESSION['login']['name'] = 'Campo em branco';
+    return true;
+  }
+
+  if($erro == true){
+    return true;
+  }
+}
+
+function validaSenha($senha, $erro){
+  if(empty($senha) || $senha == ''){
+    $_SESSION['login']['password'] = 'Campo em branco';
+    return true;
+  }
+
+  if($erro == true){
+    return true;
+  }
+}
+
 ?>
