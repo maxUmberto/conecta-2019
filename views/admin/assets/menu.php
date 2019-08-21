@@ -23,7 +23,6 @@
                     <div class="classynav">
                         <ul id="nav">
                             <li><a href="<?php echo BASE_URL?>/admin">Geral</a></li>
-                            <li><a href="<?php echo BASE_URL?>/admin">Geral</a></li>
                             <li><a href="<?php echo BASE_URL?>/login/logout">Sair</a></li>
                         </ul>
                     </div>

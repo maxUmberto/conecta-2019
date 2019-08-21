@@ -19,6 +19,14 @@ class adminController extends Controller{
         'pct_outro'             => 0
     ];
 
+    private $anos = [
+        'outro' => [
+            'ano'   => 'Sem matrícula',
+            'total' => 0,
+            'pct'   => 0
+        ]
+    ];
+
     private function isLogged(){
         if(!isset($_SESSION['logged']) || $_SESSION['logged'] != true){
             header('Location:'.BASE_URL.'/login');
@@ -36,14 +44,17 @@ class adminController extends Controller{
         foreach ($dados as $dado){
             $this->qtdSexo($dado['sexo']);
             $this->qtdInstituicao($dado['instituicao']);
+            $this->anos($dado['matricula']);
         }
 
         $this->pctSexo($total);
         $this->pctInstituicao($total);
+        $this->pctAno($total);
 
         $dados['total'] = $total;
         $dados['sexo'] = $this->sexo;
         $dados['instituicao'] = $this->instituicao;
+        $dados['anos'] = $this->anos;
         $this->loadTemplateAdmin('home', $dados);
     }
 
@@ -77,6 +88,32 @@ class adminController extends Controller{
         $this->instituicao['pct_ufrrj-seropedica'] = (($this->instituicao['ufrrj-seropedica'] * 100) / $total);
         $this->instituicao['pct_ufrrj-im'] = (($this->instituicao['ufrrj-im'] * 100) / $total);
         $this->instituicao['pct_outro'] = (($this->instituicao['outro'] * 100) / $total);
+    }
+
+    private function anos($matricula){
+        if($matricula == null){
+            $this->anos['outro']['total']++;
+        }else{
+            $ano = substr($matricula, 0,4);
+            if(array_key_exists($ano,$this->anos)){
+                $this->anos[$ano]['total']++;
+            }else{
+                $this->anos[$ano]['total'] = 0;
+                $this->anos[$ano]['ano'] = $ano;
+                $this->anos[$ano]['pct'] = 0;
+                $this->anos[$ano]['total']++;
+            }
+        }
+    }
+
+    private function porcentagem($variavel, $total){
+        return ($variavel * 100) / $total;
+    }
+
+    private function pctAno($total){
+        foreach($this->anos as $ano => $valor){
+            $this->anos[$ano]['pct'] = $this->porcentagem($valor['total'], $total);
+        }
     }
 }
 ?>
