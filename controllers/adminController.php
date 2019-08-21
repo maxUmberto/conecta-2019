@@ -27,17 +27,11 @@ class adminController extends Controller{
         ]
     ];
 
-    private function isLogged(){
-        if(!isset($_SESSION['logged']) || $_SESSION['logged'] != true){
-            header('Location:'.BASE_URL.'/login');
-            die();
-        }
-    }
     public function index(){
         $this->isLogged();
 
         $admin = new Admin();
-        $dados = $admin->selecionaTodos();
+        $dados = $admin->selecionaTodosIndex();
 
         $total = count($dados);
 
@@ -56,6 +50,25 @@ class adminController extends Controller{
         $dados['instituicao'] = $this->instituicao;
         $dados['anos'] = $this->anos;
         $this->loadTemplateAdmin('home', $dados);
+    }
+
+    public function inscritos($id = null){
+        $this->isLogged();
+        if(!$id){
+            $admin = new Admin();
+            $dados = $admin->selecionaTodosInscritos();
+
+            $this->loadTemplateAdmin('inscritos', $dados);
+        }else{
+            echo 'temos id';
+        }
+    }
+
+    private function isLogged(){
+        if(!isset($_SESSION['logged']) || $_SESSION['logged'] != true){
+            header('Location:'.BASE_URL.'/login');
+            die();
+        }
     }
 
     private function qtdSexo($dado){
